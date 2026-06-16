@@ -13,6 +13,8 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+    environment: production
+
     steps:
       - uses: actions/checkout@v4
 
@@ -34,4 +36,4 @@ jobs:
         if: github.ref == 'refs/heads/main'
 
 
-  environment: production
+        
